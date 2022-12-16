@@ -1,0 +1,2 @@
+npm i jwt-decode //to decode the jwt token to fetch email,role in this project
+npm i file-saver @types/file-saver //to save the file in client-side

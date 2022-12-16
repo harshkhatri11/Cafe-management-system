@@ -1,0 +1,17 @@
+.float-right{
+    float: right;
+}
+
+mat-card{
+    padding: 20px;
+}
+
+table{
+    width: 100%;
+}
+
+.mat-card-custom-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

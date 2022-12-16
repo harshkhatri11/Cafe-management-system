@@ -1,0 +1,35 @@
+In your system you must have install node js and mysql
+
+1)npm install --save express mysql dotenv cors
+
+    cors :  Allows the cross origin access of resource from frontend to backend.
+    dotenv : Use to store the global variables.
+    express : One kind of framwork to create a backend.
+
+2)npm install --save-dev nodemon
+
+    for each and every change it will restart your server automatically.
+
+3)Create server.js file and added in package.json file in script tag like --> "start":"nodemon server.js"
+
+4) Create .env file
+5) Create index.js file
+6) Creae connection.js file
+7) create database <databasename> // E.x. create database cafenodejs
+
+at this step error occur when npm start so run this command in mysql command line client :
+    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+    i.e --> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Khatri@123';
+
+8)Create table.sql file 
+
+    use databasename --> use cafenodejs
+
+    and run all your sql command in sql client
+9) npm install --save jsonwebtoken nodemailer
+10) to generate sceret key to encryption and decryption jsonwebtoken 
+    1)Open cmd in existing path write -->node 
+    2)Then generate 64 bytes radom hex string --> require('crypto').randomBytes(64).toString('hex')
+    3)Store this string in .env file for E.x --> ACCESS_TOKEN = your string
+
+11)To generate Bill we will install --> npm install ejs html-pdf path uuid
